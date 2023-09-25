@@ -1,6 +1,7 @@
 import random
 from os import urandom
 
+
 class TirageEuroMillion:
     def __init__(self) -> None:
         random.seed(urandom(2048))
