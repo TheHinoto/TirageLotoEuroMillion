@@ -5,16 +5,15 @@ if __name__ == "__main__":
     typeTirage: [int, None] = None
     while typeTirage not in [1, 2]:
         try:
-            typeTirage = int(input("Voulez vous faire des tirages Loto ou Euromillion ? \n"
-                                   "1 - Pour loto \n"
-                                   "2 - pour euromillion\n"
+            typeTirage = int(input("Voulez vous faire des tirages Loto ou EuroMillion ? \n"
+                                   "1 - Pour Loto \n"
+                                   "2 - pour EuroMillion\n"
                                    "Votre Choix : "))
         except ValueError:
             print("\nVeuillez entrer un entier \n")
 
-    if typeTirage == 1:
-        Tirage = Tirageloto
-    else:
+    Tirage = Tirageloto
+    if typeTirage == 2:
         Tirage = TirageEuroMillion
 
     nombreTirage: [int, None] = None
