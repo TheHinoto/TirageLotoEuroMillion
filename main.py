@@ -1,4 +1,4 @@
-from lotterie import TirageEuroMillion, Tirageloto
+from lotterie import TirageEuroMillion, TirageLoto
 
 if __name__ == "__main__":
 
@@ -12,7 +12,7 @@ if __name__ == "__main__":
         except ValueError:
             print("\nVeuillez entrer un entier \n")
 
-    Tirage = Tirageloto
+    Tirage = TirageLoto
     if typeTirage == 2:
         Tirage = TirageEuroMillion
 

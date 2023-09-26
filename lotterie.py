@@ -18,7 +18,7 @@ class TirageEuroMillion:
         return f"TirageEuroMillion(Numbers: {self.numbers}, Stars: {self.stars})"
 
 
-class Tirageloto:
+class TirageLoto:
     def __init__(self) -> None:
         random.seed(urandom(2048))
         self.all_existing_number = list(range(1, 49 + 1))
