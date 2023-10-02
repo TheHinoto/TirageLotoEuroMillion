@@ -3,13 +3,13 @@ from os import urandom
 
 
 class TirageEuroMillion:
+    all_existing_number = set(range(1, 50 + 1))
+    all_existing_star = set(range(1, 12 + 1))
+
     def __init__(self) -> None:
         random.seed(urandom(2048))
-        self.all_existing_number = list(range(1, 50 + 1))
-        self.all_existing_star = list(range(1, 12 + 1))
-
-        self.numbers: list[int] = random.sample(self.all_existing_number, 5)
-        self.stars: list[int] = random.sample(self.all_existing_star, 2)
+        self.numbers: set[int] = set(random.sample(self.all_existing_number, 5))
+        self.stars: set[int] = set(random.sample(self.all_existing_star, 2))
 
     def __str__(self) -> str:
         return f"Numbers: {self.numbers}, Stars: {self.stars}"
@@ -19,13 +19,13 @@ class TirageEuroMillion:
 
 
 class TirageLoto:
+    all_existing_number = set(range(1, 49 + 1))
+    all_existing_star = set(range(1, 10 + 1))
+
     def __init__(self) -> None:
         random.seed(urandom(2048))
-        self.all_existing_number = list(range(1, 49 + 1))
-        self.all_existing_star = list(range(1, 10 + 1))
-
-        self.numbers: list[int] = random.sample(self.all_existing_number, 5)
-        self.stars: list[int] = random.sample(self.all_existing_star, 1)
+        self.numbers: set[int] = set(random.sample(self.all_existing_number, 5))
+        self.stars: set[int] = set(random.sample(self.all_existing_star, 1))
 
     def __str__(self) -> str:
         return f"Numbers: {self.numbers}, Stars: {self.stars}"

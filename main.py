@@ -24,7 +24,7 @@ if __name__ == "__main__":
         except ValueError:
             print("Veuillez entrer un entier")
 
-    mesTirages: list = []
+    mesTirages: set = []
     for _ in range(nombreTirage):
         mesTirages.append(Tirage())
 
